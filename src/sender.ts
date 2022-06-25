@@ -9,7 +9,7 @@ class Sender {
 
     async sendText(to: string, body:string) {
         //557199954976@c.us
-        this.client.sendText(to, body)
+        await this.client.sendText(to, body)
     }
 
     private initialize() {
@@ -19,7 +19,7 @@ class Sender {
         const start = (client: Whatsapp) => {
             this.client = client
 
-            this.sendText('5571999549776@c.us', 'eu sou um bot')
+            //this.sendText('5571999549776@c.us', 'eu sou um bot')
         }
 
         create('orcamento', qr, /* status */)
